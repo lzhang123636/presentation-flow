@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>温度诱导大鳞副泥鳅ZW性逆转关键调控机制研究方案</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- 第1页：总体科学假说与研究路线 -->
+<section class="cover">
+<h1>温度诱导大鳞副泥鳅<br>ZW性逆转关键调控机制研究方案</h1>
+<p>环境温度如何突破ZW遗传性别程序？</p>
+<p class="small">Genome → Single cell → Function → Mechanism</p>
+</section>
+
+<section>
+<h2>总体科学假说与研究路线</h2>
+<div class="two-col">
+<div class="model-box model-temp">
+<h3>核心假说模型</h3>
+<div class="flow-vertical">
+<p class="tag-red">温度刺激 Temperature signal</p>
+<p>↓</p>
+<p>性别敏感窗口 Sex-sensitive period</p>
+<p>↓</p>
+<p class="highlight">候选温度响应因子 WT1?</p>
+<p>↓</p>
+<p>性腺细胞命运重塑 Cell fate transition</p>
+<p>↓</p>
+<p>ZW遗传雌性 → ZW pseudo-male</p>
+</div>
+</div>
+<div class="model-box model-chain">
+<h3>因果证据链</h3>
+<div class="flow-vertical">
+<p class="tag-blue">① 时间证据</p>
+<p>↓</p>
+<p class="tag-purple">② 空间证据</p>
+<p>↓</p>
+<p class="tag-purple">③ 轨迹证据</p>
+<p>↓</p>
+<p class="tag-orange">④ 功能证据</p>
+<p>↓</p>
+<p class="tag-orange">⑤ 机制证据</p>
+</div>
+</div>
+</div>
+<p class="note">WT1目前为候选关键节点，需验证其是否为启动因子</p>
+</section>
+
+<!-- 第2页：研究内容1 -->
+<section>
+<h2>研究内容1：温度敏感窗口内关键响应因子筛选与动态验证</h2>
+<div class="two-col">
+<div>
+<h3>实验设计</h3>
+<div class="flow-vertical">
+<p>ZW幼鱼</p>
+<div class="compare-inline">
+<div><p class="tag-blue">20℃ Control</p></div>
+<div><p class="tag-red">30℃ Temperature</p></div>
+</div>
+<p>↓</p>
+<p>取样时间点</p>
+<p class="small">0 h · 6 h · 12 h · 24 h · 3 d · 5 d · 10 d</p>
+</div>
+</div>
+<div>
+<h3>检测方法与候选基因</h3>
+<ul class="method-list">
+<li><span class="tag-blue">RNA-seq</span> 转录组动态</li>
+<li><span class="tag-blue">RT-qPCR</span> 关键基因验证</li>
+<li><span class="tag-blue">ATAC-seq</span> 染色质开放性</li>
+<li><span class="tag-blue">Western Blot</span> 蛋白水平验证</li>
+</ul>
+<h4>候选基因</h4>
+<div class="gene-tags">
+<span class="gene">WT1</span>
+<span class="gene">DMRT1</span>
+<span class="gene">AMH</span>
+<span class="gene">SOX9</span>
+<span class="gene">FOXL2</span>
+<span class="gene">CYP19A1A</span>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2>研究内容1：预期结果</h2>
+<div class="two-col">
+<div class="chart-box">
+<h3>WT1 表达趋势</h3>
+<div class="trend-chart">
+<pre class="trend">
+表达量
+  ↑
+  |        /
+  |       /
+  |      /
+  |     /
+  |____/____________
+       时间
+</pre>
+<p class="tag-red">WT1 先变化（最早响应）</p>
+</div>
+</div>
+<div class="chart-box">
+<h3>DMRT1 表达趋势</h3>
+<div class="trend-chart">
+<pre class="trend">
+表达量
+  ↑
+  |       /
+  |      /
+  |     /
+  |____/____________
+       时间
+</pre>
+<p class="tag-orange">雄性决定基因随后激活</p>
+</div>
+</div>
+</div>
+<p class="note">如果WT1是早期温度响应因子 → WT1先变化 → 雄性决定基因随后激活 → 性逆转发生</p>
+</section>
+
+<!-- 第3页：研究内容2 -->
+<section>
+<h2>研究内容2：单细胞解析温度诱导性别命运转换过程</h2>
+<div class="two-col">
+<div>
+<h3>scRNA-seq 流程</h3>
+<div class="flow-vertical">
+<p>性腺组织</p>
+<p>↓</p>
+<p>组织消化</p>
+<p>↓</p>
+<p>单细胞悬液</p>
+<p>↓</p>
+<p class="tag-purple">10X Genomics</p>
+<p>↓</p>
+<p class="tag-purple">scRNA-seq</p>
+<p>↓</p>
+<p>Cell clustering</p>
+</div>
+</div>
+<div>
+<h3>样本设计：三个状态</h3>
+<div class="state-cards">
+<div class="state-card tag-blue">
+<p>ZW female</p>
+<p class="small">正常雌性</p>
+</div>
+<div class="state-card tag-purple">
+<p>ZW transition</p>
+<p class="small">转换中间态</p>
+</div>
+<div class="state-card tag-orange">
+<p>ZW pseudo-male</p>
+<p class="small">高温伪雄</p>
+</div>
+</div>
+<h4>核心目标</h4>
+<p class="highlight">寻找 WT1+ 细胞群</p>
+<p class="small">定位WT1发挥作用的细胞类型</p>
+</div>
+</div>
+</section>
+
+<!-- 第4页：单细胞预期结果 -->
+<section>
+<h2>单细胞预期结果：UMAP与拟时序</h2>
+<div class="two-col">
+<div class="umap-box">
+<h3>UMAP 聚类示意</h3>
+<div class="umap">
+<div class="umap-cluster c1">生殖细胞</div>
+<div class="umap-cluster c2">支持细胞</div>
+<div class="umap-cluster c3">间质细胞</div>
+<div class="umap-wt1">WT1↑ 区域</div>
+</div>
+</div>
+<div>
+<h3>拟时序分析</h3>
+<div class="flow-vertical">
+<p class="tag-blue">Female supporting cell</p>
+<p>↓</p>
+<p class="highlight">Transition cell<br>（WT1最高表达）</p>
+<p>↓</p>
+<p class="tag-orange">Male supporting cell</p>
+</div>
+<p class="note">预期：WT1在transition阶段最高表达</p>
+</div>
+</div>
+</section>
+
+<!-- 第5页：研究内容3 -->
+<section>
+<h2>研究内容3：WT1功能验证——证明因果关系</h2>
+<div class="two-col">
+<div>
+<h3>CRISPR/Cas9 流程</h3>
+<div class="flow-vertical">
+<p>sgRNA设计</p>
+<p>↓</p>
+<p>Cas9注射</p>
+<p>↓</p>
+<p>F0突变体</p>
+<p>↓</p>
+<p class="tag-red">30℃诱导</p>
+<p>↓</p>
+<p>性别表型分析</p>
+</div>
+</div>
+<div>
+<h3>实验对比</h3>
+<div class="compare">
+<div class="compare-box">
+<h4>Control</h4>
+<p>ZW + 30℃</p>
+<p>↓</p>
+<p class="tag-orange">pseudo-male 比例增加</p>
+</div>
+<div class="compare-box">
+<h4>WT1 KO</h4>
+<p>ZW + 30℃</p>
+<p>↓</p>
+<p>WT1蛋白缺失（WB确认）</p>
+<p>↓</p>
+<p class="tag-blue">性逆转比例下降</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 第6页：Rescue实验 -->
+<section>
+<h2>WT1 Rescue实验：因果性关键证据</h2>
+<div class="rescue-flow">
+<div class="rescue-step">
+<h3>WT1 Knockout</h3>
+<p>ZW + 30℃</p>
+<p>↓</p>
+<p class="tag-blue">性逆转失败</p>
+</div>
+<div class="rescue-plus">+</div>
+<div class="rescue-step">
+<h3>WT1 恢复表达</h3>
+<p>mRNA注射 / 过表达</p>
+<p>↓</p>
+<p class="tag-orange">性逆转恢复</p>
+</div>
+</div>
+<p class="note">Rescue实验是证明WT1因果性的金标准——敲除后表型消失，恢复后表型重现</p>
+</section>
+
+<!-- 第7页：机制解析 -->
+<section>
+<h2>机制解析：WT1如何响应温度？</h2>
+<div class="two-col">
+<div>
+<h3>表观遗传调控模型</h3>
+<div class="flow-vertical">
+<p class="tag-red">Temperature</p>
+<p>↓</p>
+<p>Chromatin remodeling</p>
+<p>↓</p>
+<p>WT1 enhancer activation</p>
+<p>↓</p>
+<p class="highlight">WT1 expression</p>
+<p>↓</p>
+<p class="tag-orange">DMRT1 pathway</p>
+</div>
+</div>
+<div>
+<h3>实验验证</h3>
+<ul class="method-list">
+<li><span class="tag-purple">ATAC-seq</span> 染色质开放状态变化</li>
+<li><span class="tag-purple">CUT&Tag</span> 组蛋白修饰分析</li>
+<li><span class="tag-purple">ChIP-qPCR</span> WT1结合靶基因启动子</li>
+<li><span class="tag-purple">Western Blot</span> 下游DMRT1/AMH蛋白变化</li>
+</ul>
+<p class="note">探索温度信号 → 表观遗传重塑 → WT1激活的分子机制</p>
+</div>
+</div>
+</section>
+
+<!-- 第8页：最终科学模型 -->
+<section>
+<h2>最终科学模型</h2>
+<div class="final-model">
+<div class="flow-vertical big-flow">
+<p class="tag-red">Environmental temperature</p>
+<p>↓</p>
+<p class="highlight">候选早期响应因子 WT1?</p>
+<p>↓</p>
+<p>Supporting cell fate reprogramming</p>
+<p>↓</p>
+<p>Male pathway activation</p>
+<p>↓</p>
+<p class="tag-orange">ZW sex reversal</p>
+</div>
+<div class="three-levels">
+<div class="level tag-blue">Genome</div>
+<p>↓</p>
+<div class="level tag-purple">Cell</div>
+<p>↓</p>
+<div class="level tag-orange">Function</div>
+</div>
+</div>
+</section>
+
+<section class="cover">
+<h1>谢谢</h1>
+<p>温度如何通过早期响应因子重塑ZW鱼类性别命运<br>并通过单细胞和基因编辑建立因果机制</p>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  hash:true,
+  slideNumber:true,
+  transition:'slide',
+  width:1280,
+  height:720
+});
+</script>
+</body>
+</html>

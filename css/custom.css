@@ -1,0 +1,313 @@
+/* ===== 全局字体与背景 ===== */
+.reveal {
+  font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  background: #fafbfc;
+}
+
+.reveal h1 {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.4;
+}
+
+.reveal h2 {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #1a1a2e;
+  border-bottom: 3px solid #2c3e7a;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+}
+
+.reveal h3 {
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #2c3e7a;
+}
+
+.reveal h4 {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #555;
+  margin-top: 15px;
+}
+
+.reveal p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.reveal .small {
+  font-size: 0.65em;
+  color: #777;
+}
+
+.reveal .note {
+  font-size: 0.7em;
+  color: #666;
+  margin-top: 20px;
+  font-style: italic;
+  border-top: 1px dashed #ccc;
+  padding-top: 10px;
+}
+
+.reveal .highlight {
+  background: linear-gradient(135deg, #fff3cd, #ffe082);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #b8860b;
+  display: inline-block;
+}
+
+/* ===== 封面 ===== */
+.reveal .cover {
+  text-align: center;
+}
+.reveal .cover h1 {
+  font-size: 1.5em;
+  background: linear-gradient(135deg, #1a1a2e, #2c3e7a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== 颜色标签 ===== */
+.tag-blue { color: #fff; background: #2c3e7a; padding: 4px 14px; border-radius: 20px; font-size: 0.8em; display: inline-block; }
+.tag-purple { color: #fff; background: #7b2cbf; padding: 4px 14px; border-radius: 20px; font-size: 0.8em; display: inline-block; }
+.tag-orange { color: #fff; background: #f77f00; padding: 4px 14px; border-radius: 20px; font-size: 0.8em; display: inline-block; }
+.tag-red { color: #fff; background: #d62828; padding: 4px 14px; border-radius: 20px; font-size: 0.8em; display: inline-block; }
+
+/* ===== 两栏布局 ===== */
+.two-col {
+  display: flex;
+  gap: 40px;
+  text-align: left;
+}
+.two-col > div {
+  flex: 1;
+}
+
+/* ===== 流程图竖排 ===== */
+.flow-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 0;
+}
+.flow-vertical p {
+  text-align: center;
+}
+
+/* ===== 模型框 ===== */
+.model-box {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.model-box h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.model-temp {
+  border-color: #d62828;
+}
+.model-chain {
+  border-color: #2c3e7a;
+}
+
+/* ===== 基因标签 ===== */
+.gene-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.gene {
+  background: #e8ecf4;
+  color: #2c3e7a;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+/* ===== 方法列表 ===== */
+.method-list {
+  list-style: none;
+  padding: 0;
+}
+.method-list li {
+  margin: 8px 0;
+  font-size: 0.8em;
+}
+
+/* ===== 对比布局 ===== */
+.compare {
+  display: flex;
+  gap: 20px;
+}
+.compare-box {
+  flex: 1;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+}
+.compare-box h4 {
+  margin-top: 0;
+  color: #2c3e7a;
+}
+
+.compare-inline {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ===== 趋势图 ===== */
+.chart-box {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+}
+.trend-chart {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+}
+.trend {
+  font-family: "Courier New", monospace;
+  font-size: 0.7em;
+  color: #333;
+  text-align: left;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* ===== 状态卡片 ===== */
+.state-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.state-card {
+  border-radius: 10px;
+  padding: 12px 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+.state-card .small {
+  color: rgba(255,255,255,0.85);
+}
+
+/* ===== UMAP 示意 ===== */
+.umap-box {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px;
+  background: #fff;
+}
+.umap {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: #f0f0f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.umap-cluster {
+  position: absolute;
+  padding: 8px 14px;
+  border-radius: 50%;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.c1 { top: 20px; left: 30px; background: #2c3e7a; width: 100px; }
+.c2 { top: 100px; left: 140px; background: #7b2cbf; width: 100px; }
+.c3 { top: 180px; left: 50px; background: #f77f00; width: 100px; }
+.umap-wt1 {
+  position: absolute;
+  top: 90px;
+  left: 130px;
+  font-size: 0.65em;
+  color: #d62828;
+  font-weight: 700;
+  background: rgba(214,40,40,0.1);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 2px dashed #d62828;
+}
+
+/* ===== Rescue 流程 ===== */
+.rescue-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+.rescue-step {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  min-width: 220px;
+}
+.rescue-plus {
+  font-size: 2em;
+  font-weight: 700;
+  color: #2c3e7a;
+}
+
+/* ===== 最终模型 ===== */
+.final-model {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.big-flow p {
+  font-size: 0.9em;
+}
+.three-levels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.level {
+  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 0.85em;
+}
+
+/* ===== 列表样式 ===== */
+.reveal ul {
+  list-style: none;
+  padding: 0;
+}
+.reveal ul li {
+  position: relative;
+  padding-left: 20px;
+  margin: 6px 0;
+}
+.reveal ul li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #2c3e7a;
+  font-weight: 700;
+}
